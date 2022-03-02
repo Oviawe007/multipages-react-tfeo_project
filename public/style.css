@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.app{
+    background:rgb(223, 219, 219);
+}
+span{
+    color:#243fe2;
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    padding:10px;
+
+}
+/*******/
+
+
+nav ul {
+    list-style-type: none;
+    margin-left: -100px;
+    padding: 0;
+
+}
+
+   
+nav ul li {
+    float: left;
+}
+  
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/******/
+
+button{
+    color:#fff;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    background:#243fe2;
+    border-radius: 5px;
+    padding:10px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.logo{
+    width:20%;
+    margin-left:-50px;
+   
+}
+
+.right{
+    margin-left: 20px;
+}
+
+.hero{
+    background: url("./tefoImage/service-hero.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:75vh;
+    margin-top:-15px;
+}
+.hero--text{
+    display:flex;
+    flex-direction: column;
+    padding:60px;
+    transform: translateY(60px);
+    color:#fff;
+
+}
+ .hero--text-1{
+    margin-bottom: 40px;
+} 
+.hero--text-1 h3{
+    margin-bottom: 20px;
+}
+.hero--text-1 p{
+    line-height: 30px;
+
+}
+.hero--text-2 h3{
+    margin-bottom: 15px;
+
+}
+.hero--text-2 p{
+    line-height: 30px;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    margin:30px;
+}
+
+.header--text {
+    padding:20px;
+    
+}
+
+.header--text h3{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+
+}
+.header--text h2 {
+    margin-bottom: 20px;
+}
+
+.header--text p{
+    font-size:20px;
+    line-height:30px;
+    margin-bottom:20px;
+}
+
+.header--text a{
+    text-decoration: none;
+    padding:10px;
+}
+
+
+.product {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    padding:10px;
+}
+.product h2{
+    margin-bottom: 20px;
+}
+
+.product p{
+    font-size: 20px;
+}
+.prod--card{
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    width:25%;
+    height: 55vh;
+    border: 1px solid rgba(56, 54, 54, 0.61);
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 40px;
+
+}
+
+.card:hover{
+    background:rgb(94, 92, 92);
+    color:#fff;
+
+}
+
+.card-img{ 
+    width:180px;
+}
+
+.card h3{
+    margin-top:10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    text-align: justify;
+    word-spacing: normal;
+    line-height:30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.service{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 50px;
+    padding:10px;
+}
+
+.service p{
+    text-align: center;
+    justify-content: center;
+    padding:20px;
+    line-height: 25px;
+    font-size: 20px;
+    
+}
+
+.service--detail {
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content:space-evenly;
+}
+
+.service--text{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.service--right{
+    margin-bottom: 40px;
+
+}
+
+.service--right h3{
+    margin-bottom: 10px;
+}
+
+.service--right li{
+    list-style: none;
+    padding:10px;
+
+}
+
+.solution--head{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 50px;
+    padding:10px;
+}
+
+.solution--detail{
+    display: flex;
+    flex-direction:row;
+    margin-top: 40px;
+    align-items: flex-start;
+    margin-left:20%;
+   
+   
+}
+
+.solution--detail img{
+    width:55%;
+}
+
+.solution--head p{
+    text-align: center;
+    justify-content: center;
+    padding:20px;
+    line-height: 25px;
+    font-size: 20px;
+    
+}
+
+.solution--text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.solution--card-head{
+    margin-bottom: 80px;
+}
+.solution--card-head h4{
+    margin:-20px 350px;
+}
+.contact{
+    position:relative;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    padding:20px;
+    margin-bottom:100px;
+}
+
+.contact h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom:30px;
+}
+.contact--card{
+    position:relative;
+
+}
+
+.contact--img{
+    position:absolute;
+    top:-10px;
+    left:-290px;
+    width:40%;
+
+}
+.form{
+    width:100%;
+    padding:20px;
+    margin-right:-100px;
+}
+.form label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #383636;
+}
+.form input{
+    width: 700px;
+    height: 50px;
+    border: 1px solid rgba(56, 54, 54, 0.53);
+    border-radius: 10px;
+    margin:8px 0 30px;
+    padding: 12px 20px;
+    font-size:14px;
+}
+ input:focus{
+    outline:none;
+    border:1px solid #243FE2;
+}
+.form textarea{
+    width: 700px;
+    height: 200px;
+    border: 1px solid rgba(56, 54, 54, 0.61);
+    border-radius: 10px;
+    margin:8px 0 30px;
+    padding: 12px 20px;
+    font-size:14px;
+     resize: none;
+}
+.form textarea:focus{
+    outline:none;
+    border:1px solid #243FE2;
+}
+.form button{
+    width: 700px;
+    height: 50px;
+    outline:none;
+    border:none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    cursor:pointer;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    top: 4347px;
+    background: #0A0A0A;
+    padding:50px;
+}
+
+hr {
+    border:1px solid rgb(216, 208, 208)
+}
+
+footer p{
+    color:#fff
+}
