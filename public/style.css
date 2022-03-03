@@ -32,9 +32,13 @@ nav ul {
 nav ul li {
     float: left;
 }
-  
 
-nav ul li a {
+nav ul li:hover{
+    background:#243fe2;
+    border-radius: 5px;
+}
+
+nav ul li a{
     display: block;
     color: #000;
     text-align: center;

@@ -21,7 +21,7 @@ export default function Header(){
                     ></Typical>
                 </h2>
                 <p>From analysing systems to planning and execution, we can help <br />you determine what steps to take to fill the gaps in your current <br />business technology. </p>
-                <button className="btn"><Link to="./ContactPage">Get in Touch &#8594;</Link></button>
+                <button className="btn"><Link to="/Contact">Get in Touch &#8594;</Link></button>
           </div>
           <div>
               <img src="./tefoImage/Business deal-bro.png"  alt="" width="300px"/>
