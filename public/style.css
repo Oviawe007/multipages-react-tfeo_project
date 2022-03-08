@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-.app{
+/* .app{
     background:rgb(223, 219, 219);
-}
+} */
 span{
     color:#243fe2;
 }
@@ -313,15 +313,15 @@ button{
 
 .contact--img{
     position:absolute;
-    top:-10px;
-    left:-290px;
-    width:40%;
+    top:5;
+    left:-450px;
+    width:400px;
 
 }
 .form{
     width:100%;
     padding:20px;
-    margin-right:-100px;
+    margin-right:-300px;
 }
 .form label{
     font-style: normal;
@@ -331,7 +331,7 @@ button{
     color: #383636;
 }
 .form input{
-    width: 700px;
+    width: 500px;
     height: 50px;
     border: 1px solid rgba(56, 54, 54, 0.53);
     border-radius: 10px;
@@ -344,7 +344,7 @@ button{
     border:1px solid #243FE2;
 }
 .form textarea{
-    width: 700px;
+    width: 500px;
     height: 200px;
     border: 1px solid rgba(56, 54, 54, 0.61);
     border-radius: 10px;
@@ -358,7 +358,7 @@ button{
     border:1px solid #243FE2;
 }
 .form button{
-    width: 700px;
+    width: 500px;
     height: 50px;
     outline:none;
     border:none;
