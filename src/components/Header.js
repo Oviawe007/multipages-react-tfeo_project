@@ -9,14 +9,14 @@ export default function Header(){
         <div className="header">
             <div className="header--text">
                 <h3>Tech Solution is Our Craft</h3>
-                <h2 >We 
+                <h2 > 
                     <Typical
                         loop ={Infinity}
                         wrapper="span"
-                        steps={[" Build Web Applications", 
+                        steps={["We Build Web Applications", 
                         2000,
-                        " Offer IT Solutions", 2000,
-                        " Provide Infrastructural Services", 2000
+                        "We Offer IT Solutions", 2000,
+                        "We Provide Infrastructural Services", 2000
                     ]}
                     ></Typical>
                 </h2>
