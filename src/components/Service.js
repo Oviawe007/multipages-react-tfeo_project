@@ -5,7 +5,7 @@ export default function Service(){
         
         <div className="service">
             <h2><span>Our Services Offering</span></h2>
-            <p>TFEO  has designed and built innovative business network that offers Guaranteed Operational Efficiency at every stage. <br />Scalabiity is available both ways, thereby allowing you to update or downscale as appropriate.</p>
+            <p>TFEO  has designed and built innovative business network that offers Guaranteed Operational Efficiency at every stage. Scalabiity is available both ways, thereby allowing you to update or downscale as appropriate.</p>
             <div className="service--detail">
                 <img src="./tefoImage/service-img.png" alt="" width="50%" />
                 <div className="service--text">

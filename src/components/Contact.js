@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useRef , useState }from 'react'
+import emailjs from '@emailjs/browser';
+//import Alert from 'react-bootstrap/Alert'
 
 export default function Contact(){
+
+    const form = useRef();
+
+    const [showAlert , setShowAlert] = useState(false)
+
 
     const [formData , setFormData] = React.useState({
         fullname : "",
@@ -21,7 +28,7 @@ export default function Contact(){
 
     function handleSubmit(event) {
 
-        alert(`Thanks for Reaching out ${formData.fullname}, Your details are safe with us.\nsubmitted successfully!`)
+        //alert(`Thanks for Reaching out ${formData.fullname.toUpperCase()}, Your details are safe with us.`);
         setFormData(prevFormData => {
             return {
                 ...prevFormData,
@@ -32,6 +39,15 @@ export default function Contact(){
                 
             }
         })
+        setShowAlert(setTimeout(prevState => !prevState),100)
+        
+
+        emailjs.sendForm('service_4u2e11f', 'template_f25otzt', form.current, 'Wx5iaUJef1vFsprh7')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
 
         event.preventDefault()
 
@@ -45,7 +61,8 @@ export default function Contact(){
             </div>
             <div className="contact--card">
                 <img src="./tefoImage/Get in touch.gif" alt="" className="contact--img" />
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form"  ref={form} onSubmit={handleSubmit}>
+                    {showAlert&&<p className="alert">Thank you for contacting us...</p>}
                     <label>Full Name: <br/>
                         <input 
                             type="text" 

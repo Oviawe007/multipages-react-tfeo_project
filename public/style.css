@@ -4,12 +4,19 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-/* .app{
-    background:rgb(223, 219, 219);
-} */
-span{
-    color:#243fe2;
+a{
+    text-decoration:none;
+    color:#fff;
 }
+
+a:hover{
+   
+    font-weight:700;
+}
+ /* .app{
+    background:rgb(223, 219, 219);
+}  */
+/* 
 nav {
     display:flex;
     flex-direction: row;
@@ -18,74 +25,76 @@ nav {
     padding:10px;
 
 }
-/*******/
-
-
-nav ul {
-    list-style-type: none;
-    margin-left: -100px;
-    padding: 0;
-
+***** */
+span{
+    color:#243fe2;
 }
 
-   
-nav ul li {
-    float: left;
+.Navbar{
+    height:60px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:20px;
+    /* background:#5265c4; */
 }
 
-nav ul li:hover{
+.Navbar > .nav-items > a {
+    color:#000;
+    font-size:16px;
+    font-weight:700;
+    padding:20px;
+    text-decoration:none;
+    margin:15px;
+    position:relative;
+    opacity:0.9;
+    
+}
+
+.Navbar > .nav-items > a:hover {
+    opacity:1;
+    text-decoration:underline;
+}
+
+.btn{
+    padding:0.7rem;
+    font-size:14px;
+    font-weight:600;
     background:#243fe2;
-    border-radius: 5px;
-}
-
-nav ul li a{
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-/******/
-
-button{
-    color:#fff;
     outline:none;
     border:none;
+    border-radius:5px;
     cursor:pointer;
-    background:#243fe2;
-    border-radius: 5px;
-    padding:10px;
-    font-size:14px;
-    font-weight:bold;
+
 }
 
-.logo{
-    width:20%;
-    margin-left:-50px;
-   
+.Navbar .logo{
+    margin-left:-70px;
 }
 
-.right{
-    margin-left: 20px;
-}
+.Navbar > .nav-toggle {
+    display:none;
+} 
+
 
 .hero{
     background: url("./tefoImage/service-hero.png") no-repeat;
     background-size: cover;
     background-position: center;
     height:75vh;
-    margin-top:-15px;
+    margin-top:30px;
 }
+
 .hero--text{
     display:flex;
     flex-direction: column;
-    padding:60px;
-    transform: translateY(60px);
+    padding:10rem;
     color:#fff;
-
+    transform:translateY(-20px);
+    font-size:20px;
 }
- .hero--text-1{
+ 
+.hero--text-1{
     margin-bottom: 40px;
 } 
 .hero--text-1 h3{
@@ -111,6 +120,8 @@ button{
 }
 
 .header--text {
+    text-align:justify;
+    width:50%;
     padding:20px;
     
 }
@@ -142,6 +153,7 @@ button{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content:center;
     margin-top: 70px;
     padding:10px;
 }
@@ -267,11 +279,16 @@ button{
     width:55%;
 }
 
+.solution--head h2{
+    font-weight:bold;
+    color:#243fe2;
+}
+
 .solution--head p{
     text-align: center;
     justify-content: center;
     padding:20px;
-    line-height: 25px;
+    line-height: 40px;
     font-size: 20px;
     
 }
@@ -289,6 +306,8 @@ button{
 .solution--card-head h4{
     margin:-20px 350px;
 }
+
+
 .contact{
     position:relative;
     display:flex;
@@ -318,6 +337,17 @@ button{
     width:400px;
 
 }
+
+.alert{
+    background:#0f2fe6;
+    padding: 12px 20px;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+    width:500px;
+    
+}
 .form{
     width:100%;
     padding:20px;
@@ -337,7 +367,7 @@ button{
     border-radius: 10px;
     margin:8px 0 30px;
     padding: 12px 20px;
-    font-size:14px;
+    font-size:20px;
 }
  input:focus{
     outline:none;
@@ -350,8 +380,8 @@ button{
     border-radius: 10px;
     margin:8px 0 30px;
     padding: 12px 20px;
-    font-size:14px;
-     resize: none;
+    font-size:20px;
+    resize: none;
 }
 .form textarea:focus{
     outline:none;
@@ -366,27 +396,402 @@ button{
     font-size: 24px;
     line-height: 29px;
     cursor:pointer;
+    color:#fff;
 }
 .form button:hover{
-    background:transparent;
-    color:#243fe2;
+    opacity:0.7;
     border: 1px solid #243fe2;
 }
 
 
 footer{
+    position:relative;
     width: 100%;
-    height: 300px;
-    left: 0px;
-    top: 4347px;
+    height: 268px;
     background: #0A0A0A;
-    padding:50px;
+    padding:80px;
+}
+footer > div {
+    display:flex;
+    margin-top:30px;
+    
 }
 
-hr {
-    border:1px solid rgb(216, 208, 208)
+footer > div p{
+    color:#fff;
+    margin:10px 30px;
+    font-size:25px;
+    font-weight:700;
+    
 }
 
-footer p{
-    color:#fff
+/*****Background shape****/
+.shapes{
+    position:absolute;
+    z-index:-1;
+}
+.one{
+    left:0;
+    top:15%;
+    width:10%;
+}
+.two{
+    top:0;
+    width:30%;
+}
+.three{
+    left:30%;
+    top:33%;
+    width:10%;
+}
+.four{
+    right:0;
+    top:35%;
+    width:10%;
+}
+
+.five{
+    right:0;
+    top:70%;
+    width:10%;
+}
+
+.six{
+    right:0;
+    top:1100px;
+    width:20%;
+}
+.seven{
+    right:0;
+    top: 650px;
+    width:13%;
+}
+
+.eight{
+    left:0;
+    top:620px;
+    width:15%;
+}
+.foot1{
+    top:50px;
+    width:280px;
+    position:absolute;
+}
+.foot2{
+    top:12px;
+    width:353px;
+    position:absolute;
+    left:420px;
+}
+.foot3{
+    top:12px;
+    width:230px;
+    position:absolute;
+    right:300px;
+}
+.foot4{
+    top:12px;
+    width:200px;
+    position:absolute;
+    right:6px;
+}
+
+
+
+/*****RESPONSIVENESS****/
+
+
+@media (max-width: 700px){
+
+    .app{
+        overflow-X:hidden;
+    }
+    .Navbar .logo{
+        margin-left:-80px;
+        width:100%;
+    }
+    
+
+    .Navbar > .nav-items {
+        position:absolute;
+        top:80px;
+        display:flex;
+        flex-direction:column;
+        background:#3b4da7;
+        left:0;
+        width:100%;
+        height:62%;
+        transform:translateX(-100%);
+        transition: all .45s;
+        z-index:1;
+    }
+
+    .Navbar .btn{
+        display:none;
+    }
+
+
+    .Navbar > .nav-items > a{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        color:#fff;
+
+    }
+    .Navbar > .nav-items > a::before{
+        background:transparent;
+    }
+    .Navbar > .nav-items.open{
+        transform:translateX(0)
+    }
+
+    .Navbar .nav-toggle {
+        display:flex;
+        width:50px;
+        height:50px;
+        align-items:center;
+        justify-content:center;
+        cursor:pointer;
+        
+    }
+    .nav-toggle > .bar{
+        position:relative;
+        width:32px;
+        height:2px;
+        background:#5265c4;
+        transition:all 0.45s ease-in-out;
+    }
+    .nav-toggle > .bar::before , 
+    .nav-toggle > .bar::after{
+        content:"";
+        position:absolute;
+        height:2px;
+        background:#5265c4;
+        transition:all .4s ease-in-out;
+        
+    } 
+    .nav-toggle > .bar::before{
+        width:25px;
+        transform:translateY(-8px);
+        right:0;
+    }
+
+    .nav-toggle > .bar::after{
+        width:32px;
+        transform:translateY(8px);
+    }
+
+    .nav-toggle.open > .bar{
+        transform:translateX(-40px);
+        background:transparent;
+    }
+
+    .nav-toggle.open > .bar::before{
+        width:32px;
+        transform:rotate(45deg) translate(26px, -26px);
+    }
+    .nav-toggle.open > .bar::after{
+        transform:rotate(-45deg) translate(26px, 26px);
+    }
+
+    /****HEADER**/
+    .header{
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    
+    .header--text {
+        width:100%;
+        text-align:justify;    
+        
+    }
+    .hImage{
+       width:50%;
+       margin-left:25%;
+    }
+
+    /****PRODUCT*****/
+
+    .product p{
+        font-size:20px;
+        text-align:center;
+    }
+    .prod--card{
+        display: flex;
+        flex-direction:column;
+        margin-top: 40px;
+       
+    }
+    
+    .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:10px;
+        width:50%;
+        height: 55vh;
+    
+    }
+    
+    .card:hover{
+        background:rgb(94, 92, 92);
+        color:#fff;
+    
+    }
+    
+    .card-img{ 
+        width:100px;
+    }
+    
+    .card h3{
+        text-align:center;
+    }
+    
+    .card p{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    /****SERVICE*****/
+
+    .service{ 
+        margin-top: 20px;
+    }
+    
+    .service p{
+        font-size: 16px;
+    }
+    
+    .service--detail {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    .service--right{
+        text-align:center;
+        margin-bottom: 5px;
+    
+    }
+    
+    .service--right h3{
+        margin: 10px;
+    }
+
+    /****Hero***/
+
+    .hero{
+        height:60vh;
+    }
+    
+    .hero--text{
+        text-align:center;
+        padding:50px;
+        font-size:16px;
+    }
+
+    /****SolutionSite***/
+
+    .solution--head > p{
+        font-size:16px;
+    }
+    
+
+    .solution--detail{
+        display: flex;
+        flex-direction:column;
+        margin-top: 40px;
+        align-items: flex-start;
+        margin-left:20%;
+    
+    
+    }
+
+    .solution--detail img{
+        transform:translateX(50px);
+    
+        width:55%;
+    }
+
+    .solution--head p{
+        text-align: center;
+        justify-content: center;
+        padding:20px;
+        line-height: 25px;
+        font-size: 20px;
+        
+    }
+
+    .solution--text{
+        margin-left:-15px;
+        margin-bottom:5px;
+
+    }
+
+    .solution--card-head{
+        margin-top:10px;
+        
+    }
+    .solution--card-head h4{
+        text-align:center;
+        margin:5px 0 0;
+    }
+
+    /******CONTACT*****/
+
+    .contact--img{
+        display:none;
+    
+    }
+    .form{
+        text-align:left;
+        margin:5px;
+        padding:5px;
+    }
+    .form label{
+        font-size: 20px;
+    }
+    .form input{
+        width: 400px;
+        font-size:15px;
+    }
+   
+    .form textarea{
+        width:100%;
+        height: 70px;
+        font-size:15px;
+        
+    }
+    .form button{
+        width:100%;
+        font-size:20px;
+    }
+
+    .alert{
+        width:100%; 
+    }
+
+    .foot1{
+       display:none;
+    }
+    .foot2{
+        left:300px;
+        top:120px;
+        width:200px;
+        
+       
+    }
+    .foot3{
+        top:12px;
+        width:230px;
+        position:absolute;
+        right:300px;
+    }
+    .foot4{
+        display:none;
+
+    }
+    
+    
+    
 }
